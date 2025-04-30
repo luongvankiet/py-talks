@@ -28,9 +28,10 @@ export default function ScrollProgressBar() {
   useEffect(() => {
     const calculatePercentage = () => {
       const scrollPosition = window.scrollY;
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const percentage = (scrollPosition / totalHeight) * 100;
-      setPercentage(percentage.toFixed(0));
+      const totalHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const percentage = Math.round((scrollPosition / totalHeight) * 100);
+      setPercentage(percentage);
     };
 
     window.addEventListener("scroll", calculatePercentage);

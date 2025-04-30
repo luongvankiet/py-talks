@@ -1,9 +1,8 @@
 import type React from "react";
 
-import { useState, useRef } from "react";
-import { motion } from "motion/react";
-import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import { motion } from "motion/react";
+import { useRef, useState } from "react";
 
 
 export default function HeroSection() {
