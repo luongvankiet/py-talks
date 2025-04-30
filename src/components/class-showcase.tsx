@@ -7,10 +7,22 @@ import { useEffect, useRef, useState } from "react";
 import StudentDetailDialog from "./student-detail-dialog";
 
 const classPhotos = [
-  { src: "/images/placeholder.jpeg", alt: "Class group photo 1" },
-  { src: "/images/placeholder.jpeg", alt: "Class group photo 2" },
-  { src: "/images/placeholder.jpeg", alt: "Class group photo 3" },
-  { src: "/images/placeholder.jpeg", alt: "Class group photo 4" },
+  {
+    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    alt: "Class group photo 1",
+  },
+  {
+    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    alt: "Class group photo 2",
+  },
+  {
+    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    alt: "Class group photo 3",
+  },
+  {
+    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    alt: "Class group photo 4",
+  },
 ];
 
 const classmates = [
@@ -236,7 +248,7 @@ export default function ClassShowcase() {
                   <img
                     src={
                       classPhotos[currentPhotoIndex].src ||
-                      "/images/placeholder.jpeg"
+                      `${process.env.VITE_APP_URL}/images/placeholder.jpeg`
                     }
                     alt={classPhotos[currentPhotoIndex].alt}
                     className="object-cover w-full h-full"

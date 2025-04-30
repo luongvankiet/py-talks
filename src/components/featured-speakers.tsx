@@ -144,7 +144,7 @@ export default function FeaturedSpeakers() {
                       <div className="flex flex-col items-center text-center">
                         <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-violet-200">
                           <img
-                            src={speaker.photo || "/images/placeholder.jpeg"}
+                            src={speaker.photo || `${process.env.VITE_APP_URL}/images/placeholder.jpeg`}
                             alt={speaker.name}
                             className="object-cover"
                           />

@@ -2,11 +2,20 @@ import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "motion/react";
 
 const sponsors = [
-  { name: "Google", logo: "/images/google.png" },
-  { name: "LinkedIn", logo: "/images/linkedin-logo.webp" },
-  { name: "ECA Professional Year", logo: "/images/PY-Provider-ECA.png" },
-  { name: "Friends Lobby", logo: "/images/friends.png" },
-  { name: "TED Talk", logo: "/images/ted-logo.png" },
+  { name: "Google", logo: `${process.env.VITE_APP_URL}/images/google.png` },
+  {
+    name: "LinkedIn",
+    logo: `${process.env.VITE_APP_URL}/images/linkedin-logo.webp`,
+  },
+  {
+    name: "ECA Professional Year",
+    logo: `${process.env.VITE_APP_URL}/images/PY-Provider-ECA.png`,
+  },
+  {
+    name: "Friends Lobby",
+    logo: `${process.env.VITE_APP_URL}/images/friends.png`,
+  },
+  { name: "TED Talk", logo: `${process.env.VITE_APP_URL}/images/ted-logo.png` },
 ];
 
 export default function Sponsors() {
@@ -64,7 +73,10 @@ export default function Sponsors() {
                 className="flex-shrink-0 mx-4 w-[100px] h-[100px] relative"
               >
                 <img
-                  src={sponsor.logo || "/images/placeholder.jpeg"}
+                  src={
+                    sponsor.logo ||
+                    `${process.env.VITE_APP_URL}/images/placeholder.jpeg`
+                  }
                   alt={sponsor.name}
                   className="object-contain filter hover:grayscale-0 transition-all duration-300 h-full rounded-xl"
                 />
