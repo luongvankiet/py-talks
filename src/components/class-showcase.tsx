@@ -8,19 +8,19 @@ import StudentDetailDialog from "./student-detail-dialog";
 
 const classPhotos = [
   {
-    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    src: `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`,
     alt: "Class group photo 1",
   },
   {
-    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    src: `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`,
     alt: "Class group photo 2",
   },
   {
-    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    src: `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`,
     alt: "Class group photo 3",
   },
   {
-    src: `${process.env.VITE_APP_URL}/images/placeholder.jpeg`,
+    src: `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`,
     alt: "Class group photo 4",
   },
 ];
@@ -248,7 +248,7 @@ export default function ClassShowcase() {
                   <img
                     src={
                       classPhotos[currentPhotoIndex].src ||
-                      `${process.env.VITE_APP_URL}/images/placeholder.jpeg`
+                      `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`
                     }
                     alt={classPhotos[currentPhotoIndex].alt}
                     className="object-cover w-full h-full"

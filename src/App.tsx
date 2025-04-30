@@ -16,7 +16,7 @@ const App = () => {
       {/* Fixed Logo */}
       <div className="absolute top-4 left-4 z-50">
         <img
-          src={`${process.env.VITE_APP_URL}/images/PY-Provider-ECA.png`}
+          src={`${import.meta.env.VITE_APP_URL}/images/PY-Provider-ECA.png`}
           alt="ECA Professional Year Logo"
           width={80}
           height={80}

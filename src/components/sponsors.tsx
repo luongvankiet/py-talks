@@ -2,20 +2,20 @@ import { useRef, useEffect } from "react";
 import { motion, useAnimation, useInView } from "motion/react";
 
 const sponsors = [
-  { name: "Google", logo: `${process.env.VITE_APP_URL}/images/google.png` },
+  { name: "Google", logo: `${import.meta.env.VITE_APP_URL}/images/google.png` },
   {
     name: "LinkedIn",
-    logo: `${process.env.VITE_APP_URL}/images/linkedin-logo.webp`,
+    logo: `${import.meta.env.VITE_APP_URL}/images/linkedin-logo.webp`,
   },
   {
     name: "ECA Professional Year",
-    logo: `${process.env.VITE_APP_URL}/images/PY-Provider-ECA.png`,
+    logo: `${import.meta.env.VITE_APP_URL}/images/PY-Provider-ECA.png`,
   },
   {
     name: "Friends Lobby",
-    logo: `${process.env.VITE_APP_URL}/images/friends.png`,
+    logo: `${import.meta.env.VITE_APP_URL}/images/friends.png`,
   },
-  { name: "TED Talk", logo: `${process.env.VITE_APP_URL}/images/ted-logo.png` },
+  { name: "TED Talk", logo: `${import.meta.env.VITE_APP_URL}/images/ted-logo.png` },
 ];
 
 export default function Sponsors() {
@@ -75,7 +75,7 @@ export default function Sponsors() {
                 <img
                   src={
                     sponsor.logo ||
-                    `${process.env.VITE_APP_URL}/images/placeholder.jpeg`
+                    `${import.meta.env.VITE_APP_URL}/images/placeholder.jpeg`
                   }
                   alt={sponsor.name}
                   className="object-contain filter hover:grayscale-0 transition-all duration-300 h-full rounded-xl"
