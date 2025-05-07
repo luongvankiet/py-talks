@@ -432,14 +432,19 @@ export default function ClassShowcase() {
                 >
                   <Card className="overflow-hidden border-2 border-gray-100 hover:shadow-xl transition-all duration-300 cursor-pointer">
                     <CardContent className="p-3">
-                      <div className="flex space-x-4 p-4">
-                        <Avatar className="w-12 h-12">
-                          <AvatarImage
-                            src="https://github.com/shadcn.png"
-                            alt="@shadcn"
+                      <div className="flex space-x-4 p-4 items-center">
+                        <div className="relative w-15 h-15 rounded-full overflow-hidden border-2">
+                          <img
+                            src={
+                              classmate.image ||
+                              `${
+                                import.meta.env.VITE_APP_URL
+                              }/images/placeholder.jpeg`
+                            }
+                            alt={classmate.name}
+                            className="object-cover"
                           />
-                          <AvatarFallback>{classmate.name}</AvatarFallback>
-                        </Avatar>
+                        </div>
                         <div className="flex-1 space-y-1">
                           <div>
                             <h4 className="font-bold text-sm">
