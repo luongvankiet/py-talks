@@ -146,7 +146,7 @@ const classmates = [
     image: `${import.meta.env.VITE_APP_URL}/images/avatars/dilpreet.jpeg`,
     linkedIn: "https://www.linkedin.com/in/dilpreet-kaur-3a2718359/",
     rotation: 7,
-    position: { top: "67%", right: "7%" },
+    position: { top: "83%", right: "7%" },
   },
 ];
 
