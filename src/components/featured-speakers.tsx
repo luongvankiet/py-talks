@@ -6,71 +6,81 @@ import { ChevronLeft, ChevronRight, Linkedin } from "lucide-react";
 
 const speakers = [
   {
-    name: "Dr. Sarah Johnson",
-    photo: "",
-    quote: "Innovation happens at the intersection of disciplines.",
-    linkedin: "https://linkedin.com/in/example1",
+    name: "Govinda Duwal Shrestha",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/gov.jpeg`,
+    quote:
+      "He is Govinda Duwal Shrestha, an IT support professional originally from Nepal and arrived in Australia in 2022. Passionate about tech, problem-solving, and learning new skills. Beside that, he loves watching and playing basketball and chess.",
+    linkedin: "https://www.linkedin.com/in/govinda-duwal-shrestha-87709a2bb/",
   },
   {
-    name: "Michael Chen",
-    photo: "",
+    name: "Pranavi Chepuru",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/avatar.jpg`,
+    quote:
+      "Pranavi is a kind, happy person who believes in positivity. she has worked as an Application Support Engineer  and holds a Master’s degree in Networking from Melbourne Institute of Technology.",
+    linkedin: "www.linkedin.com/in/pranavi-chepuru-0a75ab335",
+  },
+  {
+    name: "Van Kiet Luong (Kevin)",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/kevin.jpg`,
+    quote:
+      "Full-stack developer blending quiet focus with bold ambition, building practical web solutions with Laravel, React, and a love for learning.",
+    linkedin: "www.linkedin.com/in/van-kiet-luong",
+  },
+  {
+    name: "Sanjay Tandukar",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/sanjay.jpeg`,
     quote:
       "The future belongs to those who learn more skills and combine them in creative ways.",
-    linkedin: "https://linkedin.com/in/example2",
+    linkedin: "https://www.linkedin.com/in/sanjay-tandukar-085b6215b",
   },
   {
-    name: "Priya Patel",
-    photo: "",
-    quote: "Technology should enhance human potential, not replace it.",
-    linkedin: "https://linkedin.com/in/example3",
-  },
-  {
-    name: "James Wilson",
-    photo: "",
-    quote: "The best way to predict the future is to create it.",
-    linkedin: "https://linkedin.com/in/example4",
-  },
-  {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "Nishant",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/avatar.jpg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "Nishant is a cheerful and light-hearted person from India with a great sense of humor. He holds a Bachelor's degree in Computer Science from India and a Master’s in Information Technology from the University of Newcastle, Australia. Nishant enjoys bringing positivity to every environment and believes in the power of both laughter and learning.",
+    linkedin: "www.linkedin.com/in/nishant79",
   },
   {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "Parampal Singh",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/parampal.jpeg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "Parampal singh from Punjab, India came in Australia in 2022 currently living in Newcastle love to read novels and enjoy sketching",
+    linkedin: "www.linkedin.com/in/nishant79",
   },
   {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "Nischal Yogi",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/avatar.jpg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "Nischal Yogi originally from Nepal. He recently completed his bachelor’s degree in information technology, and he's passionate about working in tech — especially in IT support, where he can help people solve problems and make their work easier.",
+    linkedin: "www.linkedin.com/in/nischal-yogi​",
   },
   {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "Pooja Malhotra",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/avatar.jpg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "She belongs to india. Did MIT in information and network security. Worked in Infosys, India as an operational executive.Have experienced in administrator officer and customer service.",
+    linkedin: "https://www.linkedin.com/in/pooja-malhotra-91b421228/",
   },
   {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "MD Sazzad Hoshain",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/shezan.jpeg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "He's Md Sazzad Hoshain Shezan, a positive-minded IT graduate with skills in web development, networking, and data analysis, now eager to contribute to Australia’s tech industry.",
+    linkedin: "https://www.linkedin.com/in/md-sazzad-hoshain-shezan-546819255",
   },
   {
-    name: "Olivia Rodriguez",
-    photo: "",
+    name: "Abu Sohail",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/avatar.jpg`,
     quote:
-      "Success in the digital age requires continuous learning and adaptation.",
-    linkedin: "https://linkedin.com/in/example5",
+      "He is Abu Sohail, a positive-minded IT graduate with skills in web development, networking, and data analysis, now eager to contribute to Australia’s tech industry.",
+    linkedin: "https://www.linkedin.com/in/abu-sohail-043a5b350/",
+  },
+  {
+    name: "Dilpreet Kaur",
+    photo: `${import.meta.env.VITE_APP_URL}/images/avatars/dilpreet.jpeg`,
+    quote:
+      "Dilpreet Kaur is passionate about network design, security, and emerging technologies. She recently completed a Master’s degree in Networking and enjoys tackling technical challenges while continuously expanding her knowledge in the ever-evolving field of networking.",
+    linkedin: "https://www.linkedin.com/in/dilpreet-kaur-3a2718359/",
   },
 ];
 
