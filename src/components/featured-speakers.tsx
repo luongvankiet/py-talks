@@ -170,15 +170,17 @@ export default function FeaturedSpeakers() {
                         <p className="text-gray-600 italic mb-4">
                           "{speaker.quote}"
                         </p>
-                        <a
-                          href={speaker.linkedin}
-                          target="_blank"
+                        <Button
+                          variant="link"
                           rel="noopener noreferrer"
                           className="flex items-center gap-2 text-sky-600 hover:text-sky-800 transition-colors"
+                          onClick={() => {
+                            window.open(speaker?.linkedin, "_blank");
+                          }}
                         >
                           <Linkedin className="h-4 w-4" />
                           <span>LinkedIn Profile</span>
-                        </a>
+                        </Button>
                       </div>
                     </CardContent>
                   </Card>
